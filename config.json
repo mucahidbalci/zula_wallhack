@@ -1,0 +1,100 @@
+{
+  "process_name": "Zula.exe",
+  "module_name": "acknex.dll",
+
+  "offsets": {
+    "_aciklama": "sigscan.py ile otomatik guncellenir. Elle de duzeltebilirsin.",
+    "entity_list": "0x243998",
+    "view_matrix": "0x246FF4",
+    "view_matrix_is_pointer": true,
+    "entity_next": "0x4",
+    "entity_handle": "0xC",
+    "entity_position": "0x3DC",
+    "entity_angles": "0x3E8",
+    "health": null,
+    "armor": null
+  },
+
+  "entity": {
+    "max_iterations": 4096,
+    "max_distance": 250.0,
+    "alive_mode": "auto",
+    "alive_offset": "0x414",
+    "alive_min": 0.5,
+    "draw_dead": false
+  },
+
+  "units": {
+    "unit_to_meter": 1.0
+  },
+
+  "filter": {
+    "player_marker": "CHAR_",
+    "mesh_marker": "MESH",
+    "local_marker": "FPS_",
+    "team_a_models": [
+      "CHAR_HALIL", "CHAR_CEMAL", "CHAR_AZAD", "CHAR_DAYI", "CHAR_TAHIR",
+      "CHAR_CETIN", "CHAR_OSMAN", "CHAR_SAMIL", "CHAR_CUMALI",
+      "CHAR_POKADIN", "CHAR_BAHRAM", "CHAR_LEYLA"
+    ],
+    "team_b_models": [
+      "CHAR_AZER", "CHAR_PIERRE", "CHAR_BOB", "CHAR_AVI", "CHAR_EDWARD",
+      "CHAR_GEORGE", "CHAR_IVAN", "CHAR_JACK", "CHAR_ROSA", "CHAR_PABLO",
+      "CHAR_MILLA", "CHAR_KIERA"
+    ]
+  },
+
+  "overlay": {
+    "window_title": "zula_wallhack",
+    "window_class": "ZulaWallhack"
+  },
+
+  "esp": {
+    "enabled": true,
+    "box": true,
+    "corner_box": true,
+    "name": true,
+    "distance": true,
+    "health_bar": true,
+    "armor_text": false,
+    "snapline": false,
+    "head_offset": 32.0,
+    "feet_offset": -30.0,
+    "box_width_divisor": 2.4,
+    "font_size": 11
+  },
+
+  "radar": {
+    "enabled": true,
+    "size": 180,
+    "margin": 20,
+    "scale": 0.55,
+    "range": 220.0,
+    "flip_x": false,
+    "flip_y": false
+  },
+
+  "aimbot": {
+    "enabled": false,
+    "only_enemy": true,
+    "fov": 8.0,
+    "smooth": 3.0,
+    "max_step": 60.0,
+    "aim_head": true,
+    "key_vk": 18,
+    "humanize": {
+      "enabled": true,
+      "deadzone": 1.2,
+      "smooth_jitter": 0.35,
+      "jitter_px": 0.7,
+      "reaction_frames": 6,
+      "overshoot_chance": 0.08,
+      "overshoot": 0.15
+    }
+  },
+
+  "loop": {
+    "fps": 120,
+    "print_status": true
+  }
+}
